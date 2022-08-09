@@ -10,11 +10,30 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
 
+.nav__links a, .nav__social a {
+    padding: 0 1rem;
+}
 
