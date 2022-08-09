@@ -10,6 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.btn {
+    padding: 1rem 2rem;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -37,3 +41,36 @@ a {
     padding: 0 1rem;
 }
 
+.header {
+    text-align: center;
+}
+
+.header__title { 
+    padding: 3rem 0;
+}
+
+/* MOBILE STYLES FOR NAV */
+@media only screen and (max-width: 600px) {
+    .nav__links {
+        display: none;
+    }
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 920px) {
+    .header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .header__title {
+        text-align: left;
+    }
+
+    .header__photo img {
+        height: 500px;
+        border-radius: 10px;
+    }
+}
